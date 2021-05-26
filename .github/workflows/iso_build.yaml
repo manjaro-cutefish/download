@@ -148,7 +148,7 @@ jobs:
       -
         name: Checkout iso-profiles
         run: |          
-          sudo git clone https://gitlab.ma          
+          sudo git clone https://gitlab.manjaro.org/profiles-and-settings/iso-profiles.git        
       -
         name: build
         env:
