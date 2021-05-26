@@ -11,7 +11,7 @@ Images are build and uploaded in a relatively regular interval to [github releas
 
 ## sources
 
-- [iso profile](https://gitlab.manjaro.org/profiles-and-settings/iso-profiles)
+- [iso profile](https://gitlab.manjaro.org/profiles-and-settings/iso-profiles/-/tree/master/community/cutefish)
 - [desktop settings]()
 
 ## building
