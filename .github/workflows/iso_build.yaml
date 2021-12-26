@@ -25,7 +25,7 @@ jobs:
     strategy:
       matrix:
         EDITION: [cutefish]
-        BRANCH: [unstable]
+        BRANCH: [testing]
         SCOPE: [minimal]
     steps:
       - 
@@ -39,14 +39,14 @@ jobs:
           format: 'YY.MM'   
       -
         name: image-build-upload
-        uses: manjaro/manjaro-iso-action@v2.5
+        uses: manjaro/manjaro-iso-action@main
         with:
           iso-profiles-repo: https://github.com/Manjaro-Sway/iso-profiles
           edition: ${{ matrix.edition }}
           branch: ${{ matrix.branch }}
           scope: ${{ matrix.scope }}
           version: ${{ steps.time.outputs.time }}-development
-          kernel: linux513
+          kernel: linux514
           code-name: "Preview-Build"
           release-tag: ${{ needs.prepare-release.outputs.release_tag }}
       -
