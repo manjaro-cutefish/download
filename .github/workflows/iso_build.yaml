@@ -46,7 +46,7 @@ jobs:
           branch: ${{ matrix.branch }}
           scope: ${{ matrix.scope }}
           version: ${{ steps.time.outputs.time }}-development
-          kernel: linux514
+          kernel: linux515
           code-name: "Preview-Build"
           release-tag: ${{ needs.prepare-release.outputs.release_tag }}
       -
