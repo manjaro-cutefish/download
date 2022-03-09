@@ -25,7 +25,7 @@ jobs:
     strategy:
       matrix:
         EDITION: [cutefish]
-        BRANCH: [testing]
+        BRANCH: [unstable]
         SCOPE: [minimal]
     steps:
       - 
